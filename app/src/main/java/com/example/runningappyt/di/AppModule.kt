@@ -5,11 +5,15 @@ import androidx.room.Room
 import com.example.runningappyt.db.RunningDatabase
 import com.example.runningappyt.other.Constants.RUNNING_DATABASE_NAME
 import dagger.Component
+import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@Component
+@Module
+@InstallIn(SingletonComponent::class) //ApplicationComponent
 object AppModule {
 
     @Singleton
