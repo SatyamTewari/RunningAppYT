@@ -68,6 +68,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- there is also MapFragment which eases the map lifecycle along with fragment
+     but thats a bit overkill here so didn't used here -->
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="match_parent"
